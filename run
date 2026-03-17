@@ -1,2 +1,2 @@
-#!/bin/fish
+#!/bin/bash
 gcc ./src/main.c -o ./build/raycaster -I/usr/include/freetype2 -I/usr/include/libpng16 -lfreetype -lGL -lGLU -lglut -ldl -lm -O3 && ./build/raycaster
