@@ -13,7 +13,6 @@
 #define HEIGHT 512
 #define FOV 60
 #define NUM_RAYS WIDTH
-// dal ona zna ko sam ti ja
 
 int keys[256] = {0};
 float px, py, pa; // player x, y, angle in radians
@@ -195,7 +194,7 @@ void update(){
         float pyd = sin(pa) * speed;
         px += pxd;
         py += pyd;
-        // collisions (use movement direction to pick the side we probe)
+        // collisions
         float epsilon = TILESIZE * 0.2f;
         float epsilonX = (pxd >= 0.0f ? epsilon : -epsilon);
         float epsilonY = (pyd >= 0.0f ? epsilon : -epsilon);
